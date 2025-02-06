@@ -33,7 +33,7 @@ const Form = () => {
     // if we use yup
     validationSchema: Yup.object({
       name: Yup.string()
-              .min(2, "Мінімум 2 символи для заповнення")
+              .min(2, "Мінімум 2 символи")
               .required("Обов'язкове поле!"),
       email: Yup.string()
                 .email("Неправильний email адрес")
